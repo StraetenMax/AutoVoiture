@@ -16,6 +16,14 @@ public class Test {
 		voiture3.setVitesseMax(150);
 		System.out.println(voiture3.getVitesseMax());
 		
+		Voiture V = new Voiture(4, "Bleu", "Essence", 170);
+		Voiture V3 = new Voiture(6,"Marron","Electrique", 50);
+		Voiture V2 = new Voiture(40, "Rouge", "Diesel", 100);
+		System.out.println(V.plusRapide(V2));
+		System.out.println(V3.plusRapide(V2));
+		System.out.println(V.plusRapide(V3));
+		
+		
 	}
 
 }

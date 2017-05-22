@@ -67,5 +67,13 @@ public class Voiture {
 			}
 		}
 	
-
+      //méthodes
+		public boolean plusRapide(Voiture v1){
+		boolean voitPlusRapide;
+		if(v1.getVitesseMax() > this.getVitesseMax()){
+			voitPlusRapide = false;
+		}else{
+			voitPlusRapide = true;}
+			return voitPlusRapide;
+		}
 }
