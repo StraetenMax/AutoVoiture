@@ -5,7 +5,7 @@ public TypeEnergieException(){
 	System.out.println("Instanciation de Vehicule avec energie inconnue:");
 }
 public TypeEnergieException(String typeEnergie){
-	System.out.println("nstanciation de Vehicule avec energie inconnue:"+typeEnergie);
+	System.out.println("Instanciation de Vehicule avec energie inconnue:"+typeEnergie);
 }
 	
 	

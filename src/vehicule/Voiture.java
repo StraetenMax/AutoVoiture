@@ -29,7 +29,10 @@ public class Voiture {
 	public Voiture(int nbOccupants, String couleur,String energie, int vitesseMax) throws NbOccupantsException, TypeEnergieException{
 		if(nbOccupants<0){
 			//throw new NbOccupantsException();
-			throw new NbOccupantsException(this.nbOccupants);
+			throw new NbOccupantsException(this.nbOccupants);}
+			
+		if(this.energie != "Essence" && this.energie!= "Diesel" && this.energie != "Petrol"){
+			throw new TypeEnergieException(this.energie);
 		}else{
 		System.out.println("Création vehicule initialisé");
 		
