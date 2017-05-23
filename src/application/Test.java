@@ -23,7 +23,6 @@ public class Test {
 		System.out.println(V3.plusRapide(V2));
 		System.out.println(V.plusRapide(V3));
 		
-		
 	}
 
 }

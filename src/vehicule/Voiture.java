@@ -7,6 +7,8 @@ public class Voiture {
 	private String energie;
 	private int vitesseMax;
 	private String typeTransport;
+	private int nbInstances;
+	private static int nbInstancesClasse;
 //	public int nbOccupants;
 //	public String couleur;
 //	public String energie;
@@ -15,6 +17,8 @@ public class Voiture {
 	//constructeurs vide et initialisé
 	public Voiture(){
 		System.out.println("La création d'une voiture");
+		nbInstances++;
+		nbInstancesClasse++;
 		nbOccupants = 0;
 		couleur = "";
 		energie = "";
@@ -24,6 +28,8 @@ public class Voiture {
 	}
 	public Voiture(int nbOccupants, String couleur,String energie, int vitesseMax){
 		System.out.println("la création d'une voiture initialisée");
+		nbInstances++;
+		nbInstancesClasse++;
 		this.nbOccupants = nbOccupants;
 		this.couleur = couleur;
 		this.energie = energie;
@@ -32,6 +38,15 @@ public class Voiture {
 	}
 	
 //	accesseur et mutateur
+		public int getNbInstances(){
+			return nbInstances;
+		}
+		
+		public int getNbInstancesClasse(){
+				return nbInstancesClasse;
+		}
+	
+	
 		public int getNbOccupants(){
 			return nbOccupants;
 		}
