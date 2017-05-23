@@ -26,7 +26,12 @@ public class Voiture {
 		this.setTypeTransport();
 		
 	}
-	public Voiture(int nbOccupants, String couleur,String energie, int vitesseMax){
+	public Voiture(int nbOccupants, String couleur,String energie, int vitesseMax) throws NbOccupantsException{
+		if(nbOccupants<0){
+			throw new NbOccupantsException();
+		}else{
+		System.out.println("Création vehicule initialisé");
+		
 		System.out.println("la création d'une voiture initialisée");
 		nbInstances++;
 		nbInstancesClasse++;
@@ -35,6 +40,7 @@ public class Voiture {
 		this.energie = energie;
 		this.vitesseMax = vitesseMax;
 		this.setTypeTransport();
+		}
 	}
 	
 //	accesseur et mutateur
