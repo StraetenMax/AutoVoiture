@@ -26,7 +26,7 @@ public class Voiture {
 		this.setTypeTransport();
 		
 	}
-	public Voiture(int nbOccupants, String couleur,String energie, int vitesseMax) throws NbOccupantsException{
+	public Voiture(int nbOccupants, String couleur,String energie, int vitesseMax) throws NbOccupantsException, TypeEnergieException{
 		if(nbOccupants<0){
 			//throw new NbOccupantsException();
 			throw new NbOccupantsException(this.nbOccupants);

@@ -1,6 +1,7 @@
 package application;
 
 import vehicule.NbOccupantsException;
+import vehicule.TypeEnergieException;
 import vehicule.Voiture;
 
 public class Test {
@@ -14,6 +15,9 @@ public class Test {
 		
 		Voiture voiture3 = new Voiture(4, "Bleu","Essence",170);}
 		catch(NbOccupantsException Exc1){
+			
+		}
+		catch (TypeEnergieException Exc2){
 			
 		}
 		finally{
