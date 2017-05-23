@@ -5,6 +5,6 @@ public class NbOccupantsException extends Exception {
 			System.out.println("Instanciation de Vehicule avec nbOcupants negatif");
 		}
 		public NbOccupantsException(int nbOccupants){
-			System.out.println(""+nbOccupants);
+			System.out.println("Instanciation de Vehicule avec nbOcupants negatif :"+nbOccupants);
 		}
 }

@@ -28,7 +28,8 @@ public class Voiture {
 	}
 	public Voiture(int nbOccupants, String couleur,String energie, int vitesseMax) throws NbOccupantsException{
 		if(nbOccupants<0){
-			throw new NbOccupantsException();
+			//throw new NbOccupantsException();
+			throw new NbOccupantsException(this.nbOccupants);
 		}else{
 		System.out.println("Création vehicule initialisé");
 		
