@@ -7,7 +7,32 @@ import vehicule.VoitureSport;
 
 public class Test {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws NbOccupantsException, TypeEnergieException  {
+		Voiture[] vt =new Voiture[6];
+		int[] vtOcc ={2,4,5,4,5,2};
+		String[] vtCoul = {"Bleue","Rouge","Verte","Grise","Noire","Blanche"};
+		String[] vtEnerg = {"Essence","Diesel","Essence","Essence","Diesel","Essence"};
+		int[] vtVit = {140, 160, 100, 200, 170, 180};
+		
+		for(int i=0; i<6; i++){
+			if(i<3){
+				Voiture Vo = new Voiture(vtOcc[i], vtCoul[i], vtEnerg[i], vtVit[i]);
+				vt[i]= Vo;
+			}else {
+				Voiture Vz = new Voiture(vtOcc[i], vtCoul[i], vtEnerg[i], vtVit[i]);
+				vt[i]= Vz;
+				
+			}
+		}
+		
+		for(Voiture v :vt){
+			System.out.println(v.description()+"\n");
+		}
+		
+		
+		
+		
+		
 		VoitureSport voit = new VoitureSport();
 		System.out.println(voit.getNbOccupants());
 		

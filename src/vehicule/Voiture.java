@@ -93,6 +93,11 @@ public class Voiture {
 		}
 	
       //méthodes
+		public String description(){
+			String str = "Je suis une voiture pour "+this.getNbOccupants()+" personnes, de couleur "+this.getCouleur()+" Qui roule au "+this.getEnergie()+" a "+this.getVitesseMax()+" Km/h";
+			return str;
+		}
+		
 		public String avancer(){
 			return "J'avance cool";
 		}

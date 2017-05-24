@@ -22,4 +22,9 @@ public class VoitureSport extends Voiture {
 		this.nbChevaux = nbChevaux;
 	}
 	
+	//méthodes
+	public String description(){
+		String str = super.description()+" qui a "+this.getNbChevaux()+" chevaux";
+		return str;
+	}
 }
