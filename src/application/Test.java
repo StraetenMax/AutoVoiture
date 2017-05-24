@@ -3,10 +3,15 @@ package application;
 import vehicule.NbOccupantsException;
 import vehicule.TypeEnergieException;
 import vehicule.Voiture;
+import vehicule.VoitureSport;
 
 public class Test {
 
 	public static void main(String[] args) {
+		VoitureSport voit = new VoitureSport();
+		System.out.println(voit.getNbOccupants());
+		
+		
 		Voiture V1 = null;
 		try{
 		Voiture voiture = new Voiture();
